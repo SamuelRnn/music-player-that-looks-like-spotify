@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        app: "min(600px, calc(100vh - 5rem))",
+      },
+      gridTemplateColumns: {
+        "card-flow": "repeat(auto-fill, minmax(180px, 1fr))",
+      },
       colors: {
         black: {
           charcoal: "#181818",

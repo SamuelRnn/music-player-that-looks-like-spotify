@@ -1,4 +1,4 @@
-import Box from "../common/box";
+import Box from "@/components/common/box";
 
 interface Props {}
 

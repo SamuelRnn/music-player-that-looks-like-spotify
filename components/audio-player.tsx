@@ -5,7 +5,7 @@ export default function AudioPlayer({}: Props) {
     <section className='h-20 px-4 pb-2'>
       <div className='py-2 flex w-full h-full gap-8'>
         <div className='aspect-square rounded-md bg-zinc-800'></div>
-        <audio src='songs/2.wav' controls preload='true' />
+        {/* <audio src='' controls preload='true' /> */}
       </div>
     </section>
   );

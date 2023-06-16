@@ -1,6 +1,0 @@
-.transition-hover {
-  @apply transition-colors ease-out duration-100;
-}
-.transition-hover-intense {
-  @apply transition-colors ease-out duration-[350ms];
-}

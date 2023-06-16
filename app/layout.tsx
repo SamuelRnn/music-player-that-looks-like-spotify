@@ -1,7 +1,8 @@
 import { Figtree } from "next/font/google";
 
-import "./globals.css";
-import "./transitions.css";
+import "@/styles/globals.css";
+import "@/styles/animations.css";
+import "@/styles/transitions.css";
 
 import AudioPlayer from "@/components/audio-player";
 import Sidebar from "@/components/sidebar";
@@ -23,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className='p-2 flex flex-grow gap-2 w-full h-app'>
             <Sidebar />
             <Box className='w-full overflow-hidden'>
-              <div className='h-full overflow-y-scroll'>
+              <div className='h-full overflow-y-scroll relative' id='page'>
                 <AppHeader />
                 <main>{children}</main>
               </div>

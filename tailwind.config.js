@@ -29,6 +29,7 @@ module.exports = {
         },
         green: {
           lime: "#1ed760",
+          "lime-light": "#1fdf64",
         },
       },
       backgroundImage: {

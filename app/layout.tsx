@@ -22,9 +22,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className='flex flex-col h-screen'>
           <div className='p-2 flex flex-grow gap-2 w-full h-app'>
             <Sidebar />
-            <Box className='w-full overflow-y-scroll'>
-              <AppHeader />
-              <main>{children}</main>
+            <Box className='w-full overflow-hidden'>
+              <div className='h-full overflow-y-scroll'>
+                <AppHeader />
+                <main>{children}</main>
+              </div>
             </Box>
           </div>
 

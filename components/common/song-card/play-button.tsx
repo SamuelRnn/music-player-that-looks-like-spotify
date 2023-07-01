@@ -1,15 +1,18 @@
 "use client";
 
 import { twMerge } from "tailwind-merge";
-import { FaPlay } from "react-icons/fa";
+import { FaPause, FaPlay } from "react-icons/fa";
 interface Props {
   className: string;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  action?: "pause" | "play";
 }
 
-function defaultClick() {}
-
-export default function PlayButton({ className, onClick = defaultClick }: Props) {
+export default function PlayButton({
+  className,
+  onClick = function () {},
+  action = "play",
+}: Props) {
   return (
     <button
       onClick={onClick}
@@ -19,7 +22,12 @@ export default function PlayButton({ className, onClick = defaultClick }: Props)
         className
       )}
     >
-      <FaPlay className='text-lg text-black-full translate-x-[1px] translate-y-[1px]' />
+      {action === "play" && (
+        <FaPlay className='text-lg text-black-full translate-x-[1px] translate-y-[1px]' />
+      )}
+      {action === "pause" && (
+        <FaPause className='text-lg text-black-full translate-x-[1px] translate-y-[1px]' />
+      )}
     </button>
   );
 }

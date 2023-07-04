@@ -33,7 +33,8 @@ module.exports = {
         },
       },
       backgroundImage: {
-        gradient: "linear-gradient(180deg, rgba(33,18,70,1) 0%, rgba(18,18,18,1) 100%)",
+        gradient:
+          "linear-gradient(180deg, rgba(33,18,70,1) 0%, rgba(18,18,18,1) 100%)",
       },
     },
   },

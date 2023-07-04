@@ -16,15 +16,19 @@ export const metadata = {
   description: "A pretty music player that just happens to look like Spotify",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <body className={inter.className}>
-        <div className='flex flex-col h-screen'>
-          <div className='p-2 flex flex-grow gap-2 w-full h-app'>
+        <div className="flex flex-col h-screen">
+          <div className="p-2 flex flex-grow gap-2 w-full h-app">
             <Sidebar />
-            <Box className='w-full overflow-hidden'>
-              <div className='h-full overflow-y-scroll relative' id='page'>
+            <Box className="w-full overflow-hidden">
+              <div className="h-full overflow-y-scroll relative" id="page">
                 <AppHeader />
                 <main>{children}</main>
               </div>

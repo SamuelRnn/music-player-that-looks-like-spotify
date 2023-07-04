@@ -6,5 +6,9 @@ interface Props {
 }
 
 export default function Box({ children, className }: Props) {
-  return <div className={twMerge("bg-black-midnight rounded-lg", className)}>{children}</div>;
+  return (
+    <div className={twMerge("bg-black-midnight rounded-lg", className)}>
+      {children}
+    </div>
+  );
 }

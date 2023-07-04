@@ -12,6 +12,3 @@ h1 {
 .song-card:hover .play-button {
   @apply translate-y-0 opacity-100;
 }
-
-
-

@@ -23,10 +23,10 @@ export default function PlayButton({
       )}
     >
       {action === "play" && (
-        <FaPlay className='text-lg text-black-full translate-x-[1px] translate-y-[1px]' />
+        <FaPlay className="text-lg text-black-full translate-x-[1px] translate-y-[1px]" />
       )}
       {action === "pause" && (
-        <FaPause className='text-lg text-black-full translate-x-[1px] translate-y-[1px]' />
+        <FaPause className="text-lg text-black-full translate-x-[1px] translate-y-[1px]" />
       )}
     </button>
   );

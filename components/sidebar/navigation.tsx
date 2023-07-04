@@ -18,21 +18,21 @@ export default function Navigation({}: Props) {
         title: "Home",
         href: "/",
         active: location === "/",
-        icon: <MdHome className='text-3xl' />,
+        icon: <MdHome className="text-3xl" />,
       },
       {
         id: 2,
         title: "Search",
         href: "/search",
         active: location === "/search",
-        icon: <MdSearch className='text-3xl' />,
+        icon: <MdSearch className="text-3xl" />,
       },
     ],
     [location]
   );
 
   return (
-    <Box className='px-1 py-2'>
+    <Box className="px-1 py-2">
       <nav>
         {routes.map((route) => (
           <Link

@@ -1,43 +1,39 @@
-import { Figtree } from "next/font/google";
+import { Figtree } from 'next/font/google'
 
-import "@/styles/globals.css";
-import "@/styles/animations.css";
-import "@/styles/transitions.css";
+import '@/styles/globals.css'
+import '@/styles/animations.css'
+import '@/styles/transitions.css'
 
-import AudioPlayer from "@/components/audio-player";
-import Sidebar from "@/components/sidebar";
-import Box from "@/components/common/box";
-import AppHeader from "@/components/app-header";
+import AudioPlayer from '@/components/audio-player'
+import Sidebar from '@/components/sidebar'
+import Box from '@/components/common/box'
+import AppHeader from '@/components/app-header'
 
-const inter = Figtree({ weight: ["400", "700"], subsets: ["latin"] });
+const inter = Figtree({ weight: ['400', '700'], subsets: ['latin'] })
 
 export const metadata = {
-  title: "Not an spotify clone",
-  description: "A pretty music player that just happens to look like Spotify",
-};
+	title: 'Not an spotify clone',
+	description: 'A pretty music player that just happens to look like Spotify',
+}
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>
-        <div className="flex flex-col h-screen">
-          <div className="p-2 flex flex-grow gap-2 w-full h-app">
-            <Sidebar />
-            <Box className="w-full overflow-hidden">
-              <div className="h-full overflow-y-scroll relative" id="page">
-                <AppHeader />
-                <main>{children}</main>
-              </div>
-            </Box>
-          </div>
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+	return (
+		<html lang='en'>
+			<body className={inter.className}>
+				<div className='flex flex-col h-screen'>
+					<div className='p-2 flex flex-grow gap-2 w-full h-app'>
+						<Sidebar />
+						<Box className='w-full overflow-hidden'>
+							<div className='h-full overflow-y-scroll relative' id='page'>
+								<AppHeader />
+								<main>{children}</main>
+							</div>
+						</Box>
+					</div>
 
-          <AudioPlayer />
-        </div>
-      </body>
-    </html>
-  );
+					<AudioPlayer />
+				</div>
+			</body>
+		</html>
+	)
 }

@@ -1,32 +1,32 @@
 {
-  "songs": [
-    {
-      "id": "lisa-realize",
-      "title": "REALiZE",
-      "artists": ["LiSA"],
-      "source": "https://audio.jukehost.co.uk/u3IMALnvMhYrvcofSrnBYDaNK8EB9zkK",
-      "cover": "/album-covers/lisa-realize.png"
-    },
-    {
-      "id": "conro-just-wanna-luv",
-      "title": "just wanna luv",
-      "artists": ["Conro"],
-      "source": "",
-      "cover": ""
-    },
-    {
-      "id": "porter-robinson-everything-goes-on",
-      "title": "Everything Goes On",
-      "artists": ["Porter Robinson"],
-      "source": "",
-      "cover": ""
-    },
-    {
-      "id": "clodier-our-story",
-      "title": "Our Story",
-      "artists": ["Cloudier"],
-      "source": "https://audio.jukehost.co.uk/at728AQmCteEp4E5B10F63HSb9vezYPn",
-      "cover": "/album-covers/cloudier-our-story.png"
-    }
-  ]
+	"songs": [
+		{
+			"id": "lisa-realize",
+			"title": "REALiZE",
+			"artists": ["LiSA"],
+			"source": "https://audio.jukehost.co.uk/u3IMALnvMhYrvcofSrnBYDaNK8EB9zkK",
+			"cover": "/album-covers/lisa-realize.png"
+		},
+		{
+			"id": "conro-just-wanna-luv",
+			"title": "just wanna luv",
+			"artists": ["Conro"],
+			"source": "",
+			"cover": ""
+		},
+		{
+			"id": "porter-robinson-everything-goes-on",
+			"title": "Everything Goes On",
+			"artists": ["Porter Robinson"],
+			"source": "",
+			"cover": ""
+		},
+		{
+			"id": "clodier-our-story",
+			"title": "Our Story",
+			"artists": ["Cloudier"],
+			"source": "https://audio.jukehost.co.uk/at728AQmCteEp4E5B10F63HSb9vezYPn",
+			"cover": "/album-covers/cloudier-our-story.png"
+		}
+	]
 }

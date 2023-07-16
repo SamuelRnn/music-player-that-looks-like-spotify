@@ -1,6 +1,6 @@
 .transition-hover {
-  @apply transition-all ease-out duration-100;
+	@apply transition-all ease-out duration-100;
 }
 .transition-hover-intense {
-  @apply transition-all ease-out duration-[320ms];
+	@apply transition-all ease-out duration-[320ms];
 }

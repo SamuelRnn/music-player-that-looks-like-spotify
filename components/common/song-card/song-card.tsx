@@ -18,8 +18,7 @@ const DEFAULT: Song = {
 
 export default function SongCard({ songData = DEFAULT }: Props) {
 	const handlePlay = () => {
-		const player = new Audio(songData.source)
-		player.play()
+		//audio state change
 	}
 
 	return (

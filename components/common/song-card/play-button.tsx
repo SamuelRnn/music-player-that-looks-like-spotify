@@ -2,6 +2,7 @@
 
 import { twMerge } from 'tailwind-merge'
 import { FaPause, FaPlay } from 'react-icons/fa'
+
 interface Props {
 	className: string
 	onClick?: React.MouseEventHandler<HTMLButtonElement>
